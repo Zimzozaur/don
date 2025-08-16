@@ -9,7 +9,7 @@ import (
 	"time"
 )
 
-const DonVersion= "0.0.12"
+const DonVersion= "0.0.1"
 
 func stdInsert(cmd *exec.Cmd)  {
 	cmd.Stdout = os.Stdout
