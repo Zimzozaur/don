@@ -100,7 +100,7 @@ func main() {
 			 xrr("Usage: don tail <path>", nil)
 		}
 		tailPath := os.Args[2]
-		cmdTail := exec.Command("tailwindcss", "-i", tailPath+"/input.css", "-o", tailPath+"/output.css", "--watch")
+		cmdTail := exec.Command("tailwindcss", "-i", tailPath+"/input.css", "-o", tailPath+"/output.css", "-w")
 		stdInsert(cmdTail)
 		if err = cmdTail.Run(); err != nil {
 			xrr("tailwindcss failed: %v", err)
